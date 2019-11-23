@@ -10,7 +10,7 @@ include_directories("D:/SDK/include")
 
 # lib directory
 link_directories("D:/SDK/lib/win32")
-link_libraries(avcodec)
+link_libraries(avformat avcodec avutil swscale swresample postproc avfilter avdevice)
 
 
 add_subdirectory ("1-extractYUV420")
